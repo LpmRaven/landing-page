@@ -1,0 +1,78 @@
+.c-index {
+    .c-index__layout-container {
+    }
+
+    .c-index__layout-item-1 {
+        flex: 1 1 auto;
+        order: 1;
+        margin-bottom: 2em;
+    }
+
+    .c-index__layout-item-2 {
+        flex: 1 1 auto;
+        order: 2;
+    }
+
+    @media (min-width: $size-m) {
+        .c-index__layout-item-1 {
+            flex: 1 1 calc(40% - 2em);
+            order: 2;
+            margin-left: 2em;
+        }
+
+        .c-index__layout-item-2 {
+            flex: 1 1 60%;
+            order: 1;
+        }
+    }
+
+    .c-index__sign-up {
+        h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 3em;
+            text-align: center;
+        }
+    }
+
+    .c-index__starts {
+        h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 3em;
+            text-align: center;
+        }
+    }
+
+    .c-index__welcome {
+        padding: 2em;
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1em;
+            text-align: left;
+            @include second(400, normal);
+        }
+    }
+
+    .c-index__discord {
+        p {
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+
+    .c-index__dates {
+        padding: 2em;
+    }
+}

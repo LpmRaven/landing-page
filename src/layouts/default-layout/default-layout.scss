@@ -1,0 +1,69 @@
+@import "../../styles/global-styles.scss";
+@import "../../styles/overrides.scss";
+
+.c-default-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    overflow: hidden;
+
+    .c-default-background-layout {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1em 1fr 1em;
+        grid-template-rows: auto;
+        grid-template-areas: "pl main pr";
+
+        @media (min-width: $size-m) {
+            grid-template-columns: 1fr minmax(auto, 1330px) 1fr;
+            grid-template-areas: "pl main pr";
+        }
+
+        .c-default-background-layout__left {
+            grid-area: pl;
+            background-color: rgba(186, 134, 251, 0.85);
+            //width: 0;
+        }
+
+        .c-default-background-layout__main {
+            grid-area: main;
+            background: linear-gradient(0.25turn, rgba(186, 134, 251, 0.85), rgba(3, 218, 198, 0.85));
+
+            @media (min-width: $size-s2) {
+                //margin: 1.5em 0 1em;
+            }
+        }
+
+        .c-default-background-layout__right {
+            grid-area: pr;
+            background-color: rgba(3, 218, 198, 0.85);
+        }
+    }
+
+    .c-default-background__lightning-1 {
+        position: absolute;
+        position: absolute;
+        top: 0;
+        left: -150px;
+        z-index: -2;
+
+        img {
+            height: 1100px;
+        }
+    }
+
+    .c-default-background__lightning-2 {
+        position: absolute;
+        position: absolute;
+        top: -190px;
+        left: 900px;
+        z-index: -2;
+
+        img {
+            height: 1150px;
+        }
+    }
+}
