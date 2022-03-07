@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Liam Raven",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^4.9.1"
+  }
 }
